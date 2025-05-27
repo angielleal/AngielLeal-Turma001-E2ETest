@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
   use: {
     trace: 'on',
     locale: 'pt-BR',
-    headless: false,
+    headless: process.env.CI === 'true' ? true : false,  // <-- muda para true no CI
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
     screenshot: 'on',
@@ -25,6 +25,8 @@ const config: PlaywrightTestConfig = {
         open: 'never'
       }
     ]
+    
   ]
 };
+
 export default config;
