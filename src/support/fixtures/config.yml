@@ -1,0 +1,16 @@
+environments:
+  dev:
+    baseUrl: "https://www.demoblaze.com/index.html"
+    usuario: "seuUsuario"
+    senha: "suaSenha"
+    timeout: 30000
+  qa:
+    baseUrl: "https://www.demoblaze.com/index.html"
+    usuario: "usuarioQa"
+    senha: "senhaQa"
+    timeout: 30000
+  prod:
+    baseUrl: "https://www.demoblaze.com/index.html"
+    usuario: "usuarioProd"
+    senha: "senhaProd"
+    timeout: 30000
